@@ -1,4 +1,3 @@
-/* Reset & Global */
 body {
   margin: 0;
   font-family: "Noto Sans KR", sans-serif;
@@ -137,15 +136,15 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Footer */
-footer {
+/* Chart */
+.chart-container {
+  margin: 2rem 0;
   background: #1e1e1e;
-  text-align: center;
   padding: 1rem;
-  color: #aaa;
-  font-size: 0.9rem;
+  border-radius: 8px;
 }
 
+/* Animation */
 section {
   opacity: 0;
   transform: translateY(50px);
@@ -157,3 +156,11 @@ section.visible {
   transform: translateY(0);
 }
 
+/* Footer */
+footer {
+  background: #1e1e1e;
+  text-align: center;
+  padding: 1rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}
