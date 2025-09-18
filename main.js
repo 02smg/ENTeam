@@ -1,7 +1,5 @@
-// main.ts - 섹션 애니메이션 및 차트 생성
+// main.js - 섹션 애니메이션 및 차트 생성
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
-
   // Intersection Observer for fade-in
   const observer = new IntersectionObserver(
     (entries) => {
@@ -14,14 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.2 }
   );
 
-  sections.forEach((sec) => observer.observe(sec));
+  document.querySelectorAll("section").forEach((sec) => observer.observe(sec));
 
   // Smooth scroll
   document.querySelectorAll("a[href^='#']").forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
       const target = document.querySelector(
-        (this as HTMLAnchorElement).getAttribute("href")!
+        this.getAttribute("href")
       );
       if (target) {
         target.scrollIntoView({ behavior: "smooth" });
@@ -30,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Chart.js - Retention Chart
-  const retentionCtx = document.getElementById("retentionChart") as HTMLCanvasElement;
+  const retentionCtx = document.getElementById("retentionChart");
   if (retentionCtx) {
     new Chart(retentionCtx, {
       type: "line",
@@ -61,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Chart.js - Growth Chart
-  const growthCtx = document.getElementById("growthChart") as HTMLCanvasElement;
+  const growthCtx = document.getElementById("growthChart");
   if (growthCtx) {
     new Chart(growthCtx, {
       type: "bar",
