@@ -8,6 +8,11 @@ body {
 
 h1, h2, h3 {
   margin: 0 0 1rem;
+  color: #00c896; /* 제목은 강조 색 */
+}
+
+p, li {
+  color: #ddd; /* 본문 텍스트는 밝은 회색 */
 }
 
 a {
@@ -85,7 +90,6 @@ a:hover {
 }
 
 .section h2 {
-  color: #00c896;
   margin-bottom: 1.5rem;
 }
 
@@ -107,6 +111,7 @@ a:hover {
   background: #2a2a2a;
   padding: 1rem;
   border-radius: 8px;
+  color: #ddd;
 }
 
 /* Timeline */
@@ -121,6 +126,7 @@ a:hover {
   background: #2a2a2a;
   padding: 1rem;
   border-radius: 8px;
+  color: #ddd;
 }
 
 /* Team Grid */
@@ -146,7 +152,7 @@ a:hover {
 
 /* Animation */
 section {
-  opacity: 1;   /* 수정: 기본적으로 보이도록 */
+  opacity: 1;   /* 기본적으로 보이게 */
   transform: none;
   transition: all 0.7s ease-out;
 }
