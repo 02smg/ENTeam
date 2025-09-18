@@ -145,3 +145,15 @@ footer {
   color: #aaa;
   font-size: 0.9rem;
 }
+
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.7s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
