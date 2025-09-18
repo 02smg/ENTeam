@@ -1,0 +1,148 @@
+    <!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mind-Pet — ENTeam</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo" aria-hidden="true">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect rx="6" width="24" height="24" fill="url(#g)"/>
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#FF9A8B"/><stop offset="1" stop-color="#6A11CB"/></linearGradient></defs>
+        </svg>
+      </div>
+      <nav class="nav" aria-label="메인 내비게이션">
+        <a href="#vision">비전</a>
+        <a href="#solution">솔루션</a>
+        <a href="#roadmap">로드맵</a>
+        <a href="#team">팀</a>
+      </nav>
+      <button id="themeToggle" class="btn ghost" aria-pressed="false">Vibe: Bright</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Mind‑Pet</h1>
+          <p class="tagline">당신의 리듬을 닮은 AI 웰니스 펫</p>
+          <p class="lead">데이터와 감성을 연결해, ‘관리’가 아닌 ‘돌봄’으로 건강 루틴을 지속하게 합니다. 펫과 함께 작고 꾸준한 변화를 경험해보세요.</p>
+          <div class="cta">
+            <a href="#solution" class="btn primary">솔루션 보기</a>
+            <a href="#team" class="btn">팀 보기</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="false">
+          <div class="pet-card" id="petCard" data-state="happy" aria-hidden="true">
+            <svg id="petSVG" viewBox="0 0 200 200" class="pet-svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="petGrad" x1="0" x2="1">
+                  <stop offset="0" stop-color="#FFD6A5"/>
+                  <stop offset="1" stop-color="#FFB4A2"/>
+                </linearGradient>
+                <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feDropShadow dx="0" dy="6" stdDeviation="18" flood-color="#0b1220" flood-opacity="0.45"/>
+                </filter>
+              </defs>
+              <g filter="url(#shadow)">
+                <circle cx="100" cy="98" r="78" fill="url(#petGrad)"/>
+              </g>
+              <g id="petFace" transform="translate(0,0)">
+                <circle cx="70" cy="90" r="8" fill="#222"/>
+                <circle cx="130" cy="90" r="8" fill="#222"/>
+                <path id="petMouth" d="M70,125 Q100,150 130,125" stroke="#222" stroke-width="6" stroke-linecap="round" fill="none"/>
+              </g>
+            </svg>
+          </div>
+
+          <div class="pet-controls" aria-hidden="false">
+            <label for="moodRange" class="sr-only">상태 시뮬레이션</label>
+            <div class="controls-row">
+              <input id="moodRange" type="range" min="0" max="100" value="80" />
+              <button id="randomMood" class="btn small">무작위</button>
+            </div>
+            <div class="mood-labels"><span>피곤</span><span>활기</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vision" class="section container">
+      <h2>프로젝트 비전</h2>
+      <p>마인드펫은 사용자의 신체적·정신적 데이터를 통합해 맥락에 맞는 개인화된 개입을 제공합니다. 펫을 통해 동기와 감성을 연결하여 꾸준함을 만들어내는 것이 목표입니다.</p>
+    </section>
+
+    <section id="problem" class="section alt container">
+      <h2>해결하려는 문제</h2>
+      <ul class="problem-list">
+        <li>
+          <strong>지속성(동기부여) 문제</strong>
+          <p>보상 지연, 기록 부담, UX 번거로움 등으로 루틴이 금방 끊깁니다.</p>
+        </li>
+        <li>
+          <strong>개인화·맥락 반영 실패</strong>
+          <p>단편적 데이터만으로는 현재 상태에 맞는 적절한 개입이 어렵습니다.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="solution" class="section container">
+      <h2>우리의 해결책</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>펫 인터페이스</h3>
+          <p>사용자 상태 변화에 따라 펫의 표정·행동이 변하고, 그에 맞는 권장 행동을 제안합니다.</p>
+        </article>
+        <article class="card">
+          <h3>게이미피케이션</h3>
+          <p>퀘스트와 커스터마이징으로 참여를 유도하고, 경제적 모델(아이템 구입·구독)을 결합합니다.</p>
+        </article>
+        <article class="card">
+          <h3>개인화 & 적시 개입</h3>
+          <p>웨어러블·폰 데이터 통합으로 실시간 맥락을 반영한 제안을 제공합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section alt container">
+      <h2>로드맵</h2>
+      <ol class="roadmap-list">
+        <li>1년차: 핵심 가설 검증 및 초기 사용자 확보</li>
+        <li>2년차: 개인화 고도화 및 수익화 실험</li>
+        <li>3년차: 서비스 확장 및 ARR 목표 달성</li>
+      </ol>
+    </section>
+
+    <section id="team" class="section container">
+      <h2>팀</h2>
+      <p><strong>ENTeam</strong></p>
+      <p class="team-intro">아래는 현재 팀원 목록입니다 (직무 표기 없음).</p>
+      <ul class="team-members" aria-label="팀원 목록">
+        <li>김나현</li>
+        <li>송민근</li>
+        <li>이수성</li>
+        <li>조세연</li>
+      </ul>
+
+      <p class="resources">참고 자료:
+        <a href="./[마인드펫] 팀 린캔버스.pdf">린캔버스</a>,
+        <a href="./[ENTeam] 문제 발굴 과정.docx">문제 발굴 과정</a>
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© ENTeam — Mind-Pet</p>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
