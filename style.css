@@ -146,8 +146,8 @@ a:hover {
 
 /* Animation */
 section {
-  opacity: 0;
-  transform: translateY(50px);
+  opacity: 1;   /* 수정: 기본적으로 보이도록 */
+  transform: none;
   transition: all 0.7s ease-out;
 }
 
