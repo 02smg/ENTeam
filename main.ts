@@ -1,8 +1,8 @@
-// main.ts - 애니메이션 효과 및 네비게이션 스크롤
+// main.ts - 섹션 애니메이션 및 차트 생성
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section");
 
-  // 페이드 인 효과
+  // Intersection Observer for fade-in
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sections.forEach((sec) => observer.observe(sec));
 
-  // 부드러운 스크롤
+  // Smooth scroll
   document.querySelectorAll("a[href^='#']").forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -28,4 +28,63 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // Chart.js - Retention Chart
+  const retentionCtx = document.getElementById("retentionChart") as HTMLCanvasElement;
+  if (retentionCtx) {
+    new Chart(retentionCtx, {
+      type: "line",
+      data: {
+        labels: ["Day 1", "Day 7", "Day 14", "Day 30"],
+        datasets: [
+          {
+            label: "리텐션 (%)",
+            data: [100, 60, 45, 30],
+            borderColor: "#00c896",
+            backgroundColor: "rgba(0,200,150,0.2)",
+            tension: 0.3,
+            fill: true,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { labels: { color: "#eee" } },
+        },
+        scales: {
+          x: { ticks: { color: "#eee" } },
+          y: { ticks: { color: "#eee" }, min: 0, max: 100 },
+        },
+      },
+    });
+  }
+
+  // Chart.js - Growth Chart
+  const growthCtx = document.getElementById("growthChart") as HTMLCanvasElement;
+  if (growthCtx) {
+    new Chart(growthCtx, {
+      type: "bar",
+      data: {
+        labels: ["1년차", "2년차", "3년차"],
+        datasets: [
+          {
+            label: "유료 고객 수",
+            data: [500, 5000, 50000],
+            backgroundColor: "#00c896",
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { labels: { color: "#eee" } },
+        },
+        scales: {
+          x: { ticks: { color: "#eee" } },
+          y: { ticks: { color: "#eee" } },
+        },
+      },
+    });
+  }
 });
