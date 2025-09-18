@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mind-Pet (마인드펫) | AI 웰니스 동반자</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <!-- Hero Section -->
@@ -25,6 +26,7 @@
       <li><a href="#canvas">린 캔버스</a></li>
       <li><a href="#validation">검증</a></li>
       <li><a href="#roadmap">로드맵</a></li>
+      <li><a href="#charts">차트</a></li>
       <li><a href="#team">팀</a></li>
       <li><a href="#contact">문의</a></li>
     </ul>
@@ -37,9 +39,6 @@
       <p>
         마인드펫은 단순한 헬스케어 앱이 아니라, <strong>사용자의 감정과 신체 데이터를 비추는 거울</strong>입니다.
         우리는 <em>“지루한 관리”를 “돌봄과 성장”의 즐거움</em>으로 바꿉니다.
-        <br><br>
-        마인드펫은 당신의 하루 속 작은 건강 습관을 반영하고, 이를 귀여운 펫의 모습으로 직관화합니다.
-        결과적으로 사용자는 기록과 루틴을 넘어, <strong>내적 동기와 정서적 연결</strong>을 경험합니다.
       </p>
     </section>
 
@@ -70,19 +69,10 @@
     <!-- Solution -->
     <section id="solution" class="section">
       <h2>💡 우리의 해결책</h2>
-      <div class="solution-content">
-        <p>
-          마인드펫은 <strong>펫 인터페이스 + 게이미피케이션 + AI 개인화</strong>를 융합합니다.
-          <br><br>
-          - 펫 육성: 운동·명상·식단 관리 → 펫 성장  
-          - 퀘스트 시스템: 건강 미션 수행 → 보상 & 즐거움  
-          - 커스터마이징: 아이템 구매 → 재미와 수익성 동시 확보  
-          - AI 개인화: 지금 상태(피곤/스트레스 등)를 반영한 맞춤 개입
-        </p>
-        <div class="mockup">
-          <p>[여기에 앱 UI Mockup 이미지 자리]</p>
-        </div>
-      </div>
+      <p>
+        마인드펫은 <strong>펫 인터페이스 + 게이미피케이션 + AI 개인화</strong>를 융합합니다.  
+        펫은 사용자의 신체적·정신적 데이터를 실시간 반영하며, 건강 관리를 돌봄과 성장의 즐거움으로 바꿉니다.
+      </p>
     </section>
 
     <!-- Lean Canvas -->
@@ -105,12 +95,9 @@
     <section id="validation" class="section">
       <h2>🧑‍💻 시장 및 사용자 검증</h2>
       <p>
-        12명의 사용자 인터뷰(10대 후반~30대)에서 공통 발견:  
-        <br>
-        <strong>“편리성과 동기부여가 없으면 앱을 지속할 수 없다.”</strong>
-        <br><br>
-        기존 앱: 인아웃, 필라이즈, 스마트폰 기본 앱 등 → 모두 <em>기록 번거로움, 의지 부족</em> 문제.  
-        마인드펫은 펫 인터페이스로 이 문제를 해결합니다.
+        12명 사용자 인터뷰 결과:  
+        <br><strong>“편리성과 동기부여 없이는 앱 지속 불가능”</strong>  
+        → 마인드펫은 펫 기반 인터페이스로 이 문제 해결.
       </p>
     </section>
 
@@ -122,11 +109,21 @@
         <div class="milestone"><h3>2년차</h3><p>유료 고객 5,000명</p></div>
         <div class="milestone"><h3>3년차</h3><p>유료 고객 50,000명<br>ARR $10M</p></div>
       </div>
-      <p>초기 3개월: 잠재 고객 3,000~4,000명 / 유료 고객 5~30명 확보</p>
+    </section>
+
+    <!-- Charts -->
+    <section id="charts" class="section">
+      <h2>📈 핵심 지표 차트</h2>
+      <div class="chart-container">
+        <canvas id="retentionChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="growthChart"></canvas>
+      </div>
     </section>
 
     <!-- Team -->
-    <section id="team" class="section">
+    <section id="team" class="section dark">
       <h2>👥 팀</h2>
       <div class="team-grid">
         <div><img src="https://via.placeholder.com/150" alt="team"><h3>팀 리더</h3><p>문제 정의 & 전략</p></div>
@@ -137,7 +134,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section dark">
+    <section id="contact" class="section">
       <h2>📩 문의하기</h2>
       <p>협업/투자/파트너십 문의: <a href="mailto:enteam@example.com">enteam@example.com</a></p>
     </section>
