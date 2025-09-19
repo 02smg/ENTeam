@@ -76,7 +76,7 @@
 | **경쟁 우위 (Unfair Advantage)** | - **펫 기반 감성 인터페이스**: 기존 헬스케어 앱에 없는 정서적 몰입 요소<br>- **게이미피케이션+AI 개인화 융합**: 지속 동기부여 + 맞춤 개입 동시 달성<br>- **인터뷰 기반 문제 검증**: 실제 사용자의 Pain Point를 반영한 솔루션 |
 | **기존 대안** | - 필라이즈, 인아웃, 찰리, Plant Nanny, 인스타그램 |
 
-> 추가 자료: [마인드펫 린 캔버스](https://docs.google.com/drawings/d/1vM7cVq_J74MD9XRpxa_spoerAYolHTu5dbQr9LbLS3s/edit)
+> 추가 자료: [마인드펫 린 캔버스](https://docs.google.com/drawings/d/1xE4lq4_z1nWfYFEsAXTiaNjt_kdJtIsA35M-DuoQXBo/edit?usp=sharing)
 ---
 
 ## 🧑‍💻 시장 및 사용자 검증 (Market Validation)
@@ -125,7 +125,7 @@
 ---
 
 ## 📂 참고 자료
-- [마인드펫 팀 린캔버스]()  
+- [마인드펫 팀 린캔버스](https://docs.google.com/drawings/d/1xE4lq4_z1nWfYFEsAXTiaNjt_kdJtIsA35M-DuoQXBo/edit?usp=sharing)  
 - [ENTeam 문제 발굴 과정](https://docs.google.com/document/d/1EJsHEzrLQN4IrvxQy_226ZsLV7aoYtbxdnEvWnJLIa4/edit?usp=sharing)  
 - [ENTeam 문제 발굴 근거](https://docs.google.com/document/d/1xanHwoFCcnLFYiTzTkbtyVEFWprTSvGlumu0mst7rSY/edit?usp=sharing)
 
