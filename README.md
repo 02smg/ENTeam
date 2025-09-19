@@ -1,11 +1,11 @@
 # 🐾 Mind-Pet (마인드펫)
-**당신의 진짜 상태를 비추는 AI 웰니스 동반자**
+> "**당신의 진짜 상태를 비추는 AI 웰니스 동반자**"
 
 ---
 
 ## 📌 프로젝트 비전 (Project Vision)
 마인드펫은 기존의 파편화된 건강 관리 앱을 넘어, **사용자의 신체적·정신적 데이터를 총체적으로 이해하고 반영하는 웰니스 패러다임**을 제시합니다.  
-우리는 지루한 '관리' 경험을 **‘펫과의 상호작용·돌봄·성장 경험’**으로 전환합니다.  
+우리는 지루한 '관리' 경험을 '**펫과의 상호작용·돌봄·성장 경험**'으로 전환합니다.  
 마인드펫은 단순한 앱이 아니라 **사용자와 함께 자라며 삶의 균형을 찾아가는 감성적 AI 웰니스 동반자**입니다.
 
 ---
@@ -43,7 +43,7 @@
 ---
 
 ## 💡 우리의 해결책 (Our Solution)
-마인드펫은 단순한 기록 앱이 아니라 **“사용자 상태를 반영하는 AI 펫 인터페이스”**입니다.  
+마인드펫은 단순한 기록 앱이 아니라 “**사용자 상태를 반영하는 AI 펫 인터페이스**”입니다.  
 
 - **펫 인터페이스**  
   - 사용자의 신체적·정신적 데이터에 따라 펫이 실시간으로 변화  
@@ -76,6 +76,7 @@
 | **경쟁 우위 (Unfair Advantage)** | - **펫 기반 감성 인터페이스**: 기존 헬스케어 앱에 없는 정서적 몰입 요소<br>- **게이미피케이션+AI 개인화 융합**: 지속 동기부여 + 맞춤 개입 동시 달성<br>- **인터뷰 기반 문제 검증**: 실제 사용자의 Pain Point를 반영한 솔루션 |
 | **기존 대안** | - 필라이즈, 인아웃, 찰리, Plant Nanny, 인스타그램 |
 
+> 추가 자료: [마인드펫 린 캔버스](https://docs.google.com/drawings/d/1vM7cVq_J74MD9XRpxa_spoerAYolHTu5dbQr9LbLS3s/edit)
 ---
 
 ## 🧑‍💻 시장 및 사용자 검증 (Market Validation)
@@ -124,8 +125,8 @@
 ---
 
 ## 📂 참고 자료
-- [마인드펫 팀 린캔버스](./[마인드펫] 팀 린캔버스.pdf)  
-- [ENTeam 문제 발굴 과정](./[ENTeam] 문제 발굴 과정.docx)  
-- [ENTeam 문제 발굴 근거](./[ENTeam] 문제 발굴 근거.docx)
+- [마인드펫 팀 린캔버스]()  
+- [ENTeam 문제 발굴 과정](https://docs.google.com/document/d/1EJsHEzrLQN4IrvxQy_226ZsLV7aoYtbxdnEvWnJLIa4/edit?usp=sharing)  
+- [ENTeam 문제 발굴 근거](https://docs.google.com/document/d/1xanHwoFCcnLFYiTzTkbtyVEFWprTSvGlumu0mst7rSY/edit?usp=sharing)
 
 ---
