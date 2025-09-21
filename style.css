@@ -9,7 +9,7 @@ body {
 
 h1, h2, h3 {
   margin: 0 0 1rem;
-  color: #00c896; /* 제목 강조 */
+  color: #00c896;
   font-weight: 700;
 }
 
@@ -175,7 +175,7 @@ a:hover {
 .team-grid img {
   width: 150px;
   height: 150px;
-  object-fit: cover;   /* 사진이 동그라미 안에서 잘림 */
+  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 0.75rem;
   border: 3px solid #fff;
